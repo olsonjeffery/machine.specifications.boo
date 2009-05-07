@@ -5,10 +5,31 @@ import Machine.Specifications
 import Machine.Specifications.Boo
 import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
 
-when "the safe identifier helper is processing a string with puncuation":  
+when "processing a context or specification name with puncuation":  
+  establish:
+    input = "hello, world"
+  
+  because_of:
+    result = SafeIdentifierHelper().ToBoxcarCase(input)
+  
   it "should remove the puncuation from the string":
-    result = SafeIdentifierHelper().ToBoxcarCase("hello, world")
     result.ShouldNotContain(",")
+  
+  input as string
+  result as string
+  
+when "prcessing a context or specification name with spaces":
+  establish:
+    input = "hello world"
+  
+  because_of:
+    result = SafeIdentifierHelper().ToBoxcarCase(input)
+  
+  it "should replace the spaces with underscores":
+    result.ShouldEqual("hello_world")
+  
+  input as string
+  result as string
 
 public class SafeIdentifierHelperSpecs:
 """Description of SafeIdentifierHelperSpecs"""
