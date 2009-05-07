@@ -9,7 +9,7 @@ macro when(className as string):
   helper = SafeIdentifierHelper()
   fieldBuilder = FieldBuilder()
   
-  className = "when_" + helper.ToPascalCase(className)
+  className = "when_"+helper.ToBoxcarCase(className)
   
   classDef = [|
     public class $(ReferenceExpression(className)):
