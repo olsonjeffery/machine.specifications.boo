@@ -7,11 +7,11 @@ public class SafeIdentifierHelper:
   public def constructor():
     pass
   
-  public def ToPascalCase(input as string) as string:
+  public def ToBoxcarCase(input as string) as string:
     input = ReplaceOperatorsWithEnglish(input)
     input = @/ ([a-z])/.Replace(input, 
       { m as Match |
-        return m.Groups[1].Value.Trim().ToUpper()
+        return "_" + m.Groups[1].Value
       }
   	)
     input = @/[^_a-zA-Z0-9]/.Replace(input, string.Empty)
