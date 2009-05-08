@@ -17,8 +17,8 @@ public class WhenMacro(LexicalInfoPreservingGeneratorMacro):
     helper = SafeIdentifierHelper()
     fieldBuilder = FieldBuilder()
     
-    className = "when_" + helper.ToBoxcarCase(className)
-    
+    className = helper.ToBoxcarCase(className)
+    className = "when_" + className if not className.ToLower().StartsWith("when");
     classDef = [|
       public class $(ReferenceExpression(className)):
         pass
