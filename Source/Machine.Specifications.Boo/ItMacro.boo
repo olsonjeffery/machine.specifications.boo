@@ -10,4 +10,4 @@ macro it(methodName as string):
   
   itName = helper.ToBoxcarCase(methodName)
   body = it.Body
-  yield DeclarationStatement(Declaration(itName, [| typeof(It) |].Type), [| { $body } |])
+  yield DeclarationStatement(Declaration(itName, [| typeof(Machine.Specifications.It) |].Type), [| { $body } |])

@@ -7,4 +7,4 @@ import Boo.Lang.PatternMatching
 
 macro because_of:
   body = because_of.Body
-  yield DeclarationStatement(Declaration("of_", [| typeof(Because) |].Type), [| { $body } |])
+  yield DeclarationStatement(Declaration("of_", [| typeof(Machine.Specifications.Because) |].Type), [| { $body } |])

@@ -7,4 +7,4 @@ import Boo.Lang.PatternMatching
 
 macro establish:
   body = establish.Body
-  yield DeclarationStatement(Declaration("context_", [| typeof(Establish) |].Type), [| { $body } |])
+  yield DeclarationStatement(Declaration("context_", [| typeof(Machine.Specifications.Establish) |].Type), [| { $body } |])

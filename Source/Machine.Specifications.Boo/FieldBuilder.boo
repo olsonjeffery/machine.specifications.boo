@@ -13,7 +13,7 @@ public class FieldBuilder:
     type = declaration.Declaration.Type.CloneNode()
     
     tempClass as ClassDefinition
-    if not type.ToCodeString() in ("Establish", "Cleanup", "Because", "It"):
+    if not type.ToCodeString() in ("Machine.Specifications.Establish", "Machine.Specifications.Cleanup", "Machine.Specifications.Because", "Machine.Specifications.It"):
       tempClass = [|
         public class foo:
           protected static $(ReferenceExpression(name)) as $type
