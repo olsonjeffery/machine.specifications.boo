@@ -18,7 +18,7 @@ when "processing a context or specification name with puncuation":
   input as string
   result as string
   
-when "prcessing a context or specification name with spaces":
+when "processing a context or specification name with spaces":
   establish:
     input = "hello world"
   
@@ -30,6 +30,9 @@ when "prcessing a context or specification name with spaces":
   
   input as string
   result as string
+
+when we_have_a_class_named_like_this:
+  pass
 
 public class SafeIdentifierHelperSpecs:
 """Description of SafeIdentifierHelperSpecs"""
