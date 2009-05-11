@@ -57,6 +57,7 @@
     <Compile Include="EstablishMacro.boo" />
     <Compile Include="FieldBuilder.boo" />
     <Compile Include="ItMacro.boo" />
+    <Compile Include="ModuleHandler.boo" />
     <Compile Include="SafeIdentifierHelper.boo" />
     <Compile Include="WhenMacro.boo" />
   </ItemGroup>
