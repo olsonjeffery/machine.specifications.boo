@@ -30,6 +30,9 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Boo.Lang.Compiler">
+      <HintPath>..\..\Libraries\boo\Boo.Lang.Compiler.dll</HintPath>
+    </Reference>
     <Reference Include="Boo.Lang.Useful" />
     <Reference Include="Machine.Specifications">
       <HintPath>..\..\Libraries\mspec\Machine.Specifications.dll</HintPath>
@@ -55,7 +58,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.boo" />
+    <Compile Include="AutoImportSpecs.boo" />
+    <Compile Include="InheritanceSpecs.boo" />
     <Compile Include="SafeIdentifierHelperSpecs.boo" />
+    <Compile Include="TestModuleHandler.boo" />
     <Compile Include="WhenMacroSpecs.boo" />
   </ItemGroup>
   <ItemGroup>
