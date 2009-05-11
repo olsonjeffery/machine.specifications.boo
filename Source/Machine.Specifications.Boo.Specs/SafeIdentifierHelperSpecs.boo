@@ -3,7 +3,7 @@ namespace Machine.Specifications.Boo.Specs
 import System
 //import Machine.Specifications
 import Machine.Specifications.Boo
-import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
+//import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
 
 when "processing a context or specification name with puncuation":  
   establish:

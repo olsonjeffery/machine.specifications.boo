@@ -2,7 +2,8 @@ namespace Foo
 
 import System
 import Machine.Specifications.Boo
-import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
+//import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
+import Boo.Lang.Builtins
 import Boo.Lang.Compiler
 import Boo.Lang.Compiler.Ast
 import Boo.Lang.Compiler.IO
@@ -31,12 +32,14 @@ public class AutoImportSpecs:
   protected static def CompileCodeAndGetContext(code as string) as CompilerContext:
     booC = BooCompiler()
     booC.Parameters.Input.Add(StringInput("name",code))
-    for i in AppDomain.CurrentDomain.GetAssemblies():
-      booC.Parameters.AddAssembly(i)
+    for i in System.Reflection.Assembly.GetExecutingAssembly().GetReferencedAssemblies():
+      asm = System.Reflection.Assembly.Load(i)
+      booC.Parameters.AddAssembly(asm)
     booC.Parameters.Pipeline = CompileToMemory()
     booC.Parameters.Ducky = false
     compileContext = booC.Run()
-    raise join(e for e in compileContext.Errors, "\n") if compileContext.GeneratedAssembly is null
+    //raise Boo.Lang.Builtins.join(e.ToString() for e in compileContext.Errors, "\n") if compileContext.GeneratedAssembly is null
+    raise join(e.ToString() for e in compileContext.Errors, "\n") if compileContext.GeneratedAssembly is null
     
     return compileContext
   

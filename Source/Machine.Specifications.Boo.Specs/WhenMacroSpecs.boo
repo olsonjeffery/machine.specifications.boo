@@ -2,7 +2,7 @@ namespace Machine.Specifications.Boo.Specs
 
 import System
 import Machine.Specifications.Boo
-import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
+//import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
 import Boo.Lang.Compiler
 import Boo.Lang.Compiler.Ast
 import System.Linq.Enumerable from System.Core
@@ -11,6 +11,9 @@ when a_context_has_a_reference_identifier_for_its_name:
   establish:
     whenMacro = WhenMacro()
     whenMacro.ModuleHandler = TestModuleHandler()
+    parameters = CompilerParameters()
+    parameters.Pipeline = CompilerPipeline()
+    whenMacro.ParametersWrapper = parameters
     macro = MacroStatement()
     macro.Arguments.Add([| context_name |])
     
@@ -28,6 +31,9 @@ when "a context has a string for it's name":
   establish:
     whenMacro = WhenMacro()
     whenMacro.ModuleHandler = TestModuleHandler()
+    parameters = CompilerParameters()
+    parameters.Pipeline = CompilerPipeline()
+    whenMacro.ParametersWrapper = parameters
     macro = MacroStatement()
     macro.Arguments.Add([| "context name" |])
     
@@ -45,6 +51,9 @@ when "a context's name starts with the word 'when'":
   establish:
     whenMacro = WhenMacro()
     whenMacro.ModuleHandler = TestModuleHandler()
+    parameters = CompilerParameters()
+    parameters.Pipeline = CompilerPipeline()
+    whenMacro.ParametersWrapper = parameters
     macro = MacroStatement()
     macro.Arguments.Add([| "when context name" |])
     
