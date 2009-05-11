@@ -1,7 +1,7 @@
 namespace Machine.Specifications.Boo.Specs
 
 import System
-import Machine.Specifications
+//import Machine.Specifications
 import Machine.Specifications.Boo
 import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
 
@@ -32,9 +32,8 @@ when "processing a context or specification name with spaces":
   result as string
 
 when we_have_a_class_named_like_this:
-  pass
+  establish:
+    result = Foo()
 
-public class SafeIdentifierHelperSpecs:
-"""Description of SafeIdentifierHelperSpecs"""
-  public def constructor():
-    pass
+public def Foo() as bool:
+  return true
