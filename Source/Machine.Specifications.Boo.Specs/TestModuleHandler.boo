@@ -1,8 +1,7 @@
 namespace Machine.Specifications.Boo.Specs
 
 import System
-import Machine.Specifications.Boo
-import Boo.Lang.Compiler
+import Msb
 import Boo.Lang.Compiler.Ast
 
 public class TestModuleHandler(ModuleHandler):

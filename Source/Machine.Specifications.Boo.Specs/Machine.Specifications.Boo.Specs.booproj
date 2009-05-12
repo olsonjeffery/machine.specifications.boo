@@ -65,9 +65,9 @@
     <Compile Include="WhenMacroSpecs.boo" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Machine.Specifications.Boo\Machine.Specifications.Boo.booproj">
-      <Project>{6976607B-6484-472C-9AF8-71D174FAF3F6}</Project>
-      <Name>Machine.Specifications.Boo</Name>
+    <ProjectReference Include="..\Msb\Msb.booproj">
+      <Project>{99CA3014-C330-4941-AECA-2D1C77479E14}</Project>
+      <Name>Msb</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(BooBinPath)\Boo.Microsoft.Build.targets" />

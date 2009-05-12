@@ -1,18 +1,16 @@
 namespace Foo
 
 import System
-import Machine.Specifications.Boo
-//import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
+import Msb
 import Boo.Lang.Builtins
 import Boo.Lang.Compiler
-import Boo.Lang.Compiler.Ast
 import Boo.Lang.Compiler.IO
 import Boo.Lang.Compiler.Pipelines
 
 when "having imported MSpec.Boo and calling an MSpec extension method", AutoImportSpecs:
   establish:
     code = """
-import Machine.Specifications.Boo
+import Msb
 
 when "making calls to a C# 3.0 extension method":
   it "should not barf":

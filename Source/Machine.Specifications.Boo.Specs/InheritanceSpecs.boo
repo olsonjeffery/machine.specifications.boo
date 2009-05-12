@@ -1,7 +1,6 @@
 namespace Machine.Specifications.Boo.Specs
 
-import Machine.Specifications.Boo
-//import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
+import Msb
 import Boo.Lang.Compiler
 import Boo.Lang.Compiler.Ast
 import System.Linq.Enumerable from System.Core

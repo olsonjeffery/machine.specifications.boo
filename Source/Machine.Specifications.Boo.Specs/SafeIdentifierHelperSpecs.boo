@@ -1,9 +1,7 @@
 namespace Machine.Specifications.Boo.Specs
 
 import System
-//import Machine.Specifications
-import Machine.Specifications.Boo
-//import Machine.Specifications.NUnitShouldExtensionMethods from Machine.Specifications.NUnit
+import Msb
 
 when "processing a context or specification name with puncuation":  
   establish:
@@ -30,10 +28,3 @@ when "processing a context or specification name with spaces":
   
   input as string
   result as string
-
-when we_have_a_class_named_like_this:
-  establish:
-    result = Foo()
-
-public def Foo() as bool:
-  return true
