@@ -2,9 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
 # SharpDevelop 3.1.0.4030
-Project("{A33008B1-5DAC-44D5-9060-242E3B6E38F2}") = "Machine.Specifications.Boo", "Machine.Specifications.Boo\Machine.Specifications.Boo.booproj", "{6976607B-6484-472C-9AF8-71D174FAF3F6}"
-EndProject
 Project("{A33008B1-5DAC-44D5-9060-242E3B6E38F2}") = "Machine.Specifications.Boo.Specs", "Machine.Specifications.Boo.Specs\Machine.Specifications.Boo.Specs.booproj", "{3CD0E78A-08BA-455C-B647-BFFAADA0CA87}"
+EndProject
+Project("{A33008B1-5DAC-44D5-9060-242E3B6E38F2}") = "Msb", "Msb\Msb.booproj", "{99CA3014-C330-4941-AECA-2D1C77479E14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -12,13 +12,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6976607B-6484-472C-9AF8-71D174FAF3F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6976607B-6484-472C-9AF8-71D174FAF3F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6976607B-6484-472C-9AF8-71D174FAF3F6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6976607B-6484-472C-9AF8-71D174FAF3F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CD0E78A-08BA-455C-B647-BFFAADA0CA87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CD0E78A-08BA-455C-B647-BFFAADA0CA87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3CD0E78A-08BA-455C-B647-BFFAADA0CA87}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3CD0E78A-08BA-455C-B647-BFFAADA0CA87}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99CA3014-C330-4941-AECA-2D1C77479E14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99CA3014-C330-4941-AECA-2D1C77479E14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99CA3014-C330-4941-AECA-2D1C77479E14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99CA3014-C330-4941-AECA-2D1C77479E14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal

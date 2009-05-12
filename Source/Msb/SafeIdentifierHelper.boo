@@ -1,4 +1,4 @@
-namespace Machine.Specifications.Boo
+namespace Msb
 
 import System
 import System.Text.RegularExpressions

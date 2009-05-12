@@ -1,10 +1,8 @@
-namespace Machine.Specifications.Boo
+namespace Msb
 
 import System
 import Boo.Lang.Compiler
 import Boo.Lang.Compiler.Ast
-import Boo.Lang.Compiler.Pipelines
-import Boo.Lang.PatternMatching
 import System.Linq.Enumerable from System.Core
 
 public class WhenMacro(LexicalInfoPreservingGeneratorMacro):

@@ -1,9 +1,8 @@
-namespace Machine.Specifications.Boo
+namespace Msb
 
 import System
 import Boo.Lang.Compiler
 import Boo.Lang.Compiler.Ast
-import Boo.Lang.PatternMatching
 
 macro cleanup:
   body = cleanup.Body
