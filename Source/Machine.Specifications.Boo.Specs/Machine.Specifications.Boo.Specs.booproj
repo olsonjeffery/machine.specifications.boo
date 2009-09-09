@@ -61,6 +61,7 @@
     <Compile Include="AutoImportSpecs.boo" />
     <Compile Include="InheritanceSpecs.boo" />
     <Compile Include="SafeIdentifierHelperSpecs.boo" />
+    <Compile Include="SpecificationStubSpecs.boo" />
     <Compile Include="TestModuleHandler.boo" />
     <Compile Include="WhenMacroSpecs.boo" />
   </ItemGroup>
