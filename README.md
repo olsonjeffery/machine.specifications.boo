@@ -71,10 +71,10 @@ Behold! Machine.Specifications.Boo!
     import Namespace.Under.Test
 
     when "doing something or other":
-      establish:
+      context:
         someStuff.ContextSetup.Goes('here')
 
-      because_of:
+      because:
         result = someStuff.Happening()
 
       it "should_be_able_to_verify_some_expectation":
@@ -106,7 +106,7 @@ You get the idea. Also note if you want to do base `establish` sections to initi
 Put them in a base context class defined using the normal Boo syntax and use inheritance as outlined above or make them "free-standing" functions in the same file as the one where you want to use them. As long as they come *after* all of the contexts in a file, you'll be good:
 
     when "whatever":
-      because_of:
+      because:
         result = Foo()
       
       it "should not be so sick of writing example specs":
