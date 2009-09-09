@@ -46,8 +46,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.boo" />
+    <Compile Include="BecauseMacro.boo" />
     <Compile Include="Because_ofMacro.boo" />
     <Compile Include="CleanupMacro.boo" />
+    <Compile Include="ContextMacro.boo" />
     <Compile Include="EstablishMacro.boo" />
     <Compile Include="FieldBuilder.boo" />
     <Compile Include="ItMacro.boo" />
